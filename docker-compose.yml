@@ -29,7 +29,6 @@ services:
       DATABASE_URL: postgresql://postgres:postgres@postgres:5432/tasksdb
       DOCKER_HOST: unix://var/run/docker.sock
     volumes:
-      - ./backend:/app
       - /var/run/docker.sock:/var/run/docker.sock
     ports:
       - "8000:8000"
