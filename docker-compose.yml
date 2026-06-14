@@ -30,6 +30,8 @@ services:
       DOCKER_HOST: unix://var/run/docker.sock
       OPENAI_API_KEY: your_key
       SECRET_KEY: your_secret
+      BACKEND_URL: https://api.moltenpancake.club
+      FRONTEND_URL: https://dash.moltenpancake.club
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     ports:
