@@ -39,7 +39,7 @@ async def google_callback(code: str, db: Session = Depends(get_db)):
                 "code": code,
                 "client_id": settings.google_client_id,
                 "client_secret": settings.google_client_secret,
-                "redirect_uri": "http://localhost:8000/api/oauth/google/callback",
+                "redirect_uri": settings.backend_url + "/api/oauth/google/callback",
                 "grant_type": "authorization_code",
             },
         )
