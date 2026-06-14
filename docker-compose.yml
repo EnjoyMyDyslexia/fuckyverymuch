@@ -54,6 +54,8 @@ services:
       CHOKIDAR_USEPOLLING: "true"
       WDS_SOCKET_PORT: "3000"
       NODE_ENV: development
+      BACKEND_URL: https://api.moltenpancake.club
+      FRONTEND_URL: https://dash.moltenpancake.club
     depends_on:
       - backend
     networks:
