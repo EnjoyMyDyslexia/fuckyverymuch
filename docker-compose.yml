@@ -32,6 +32,10 @@ services:
       SECRET_KEY: your_secret
       BACKEND_URL: https://api.moltenpancake.club
       FRONTEND_URL: https://dash.moltenpancake.club
+      GITHUB_CLIENT_ID: Ov23lin9ijNsi1PtXuJH
+      GITHUB_CLIENT_SECRET: 5d610c08f0122c9a456e95a33a8117d781784126
+      GOOGLE_CLIENT_ID: 943862297057-1htkn3enbj6m0h24ho38l91p4pu5lahb.apps.googleusercontent.com
+      GOOGLE_CLIENT_SECRET: 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
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     ports:
