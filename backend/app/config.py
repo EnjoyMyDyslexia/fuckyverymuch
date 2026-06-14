@@ -14,6 +14,8 @@ class Settings(BaseSettings):
     access_token_expire_minutes: int = 30
     
     docker_socket: str = "/var/run/docker.sock"
+    backend_url: str = "http://localhost:8000"
+    frontend_url: str = "http://localhost:3000"
     
     cors_origins: list = ["http://localhost:3000", "http://127.0.0.1:3000", "https://dash.moltenpancake.club"]
 
