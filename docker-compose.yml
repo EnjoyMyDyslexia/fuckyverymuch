@@ -41,7 +41,7 @@ services:
       - edocode_network
     privileged: true
 
-  frontend:   # ✅ FIXED: now correctly inside services
+  frontend:
     build:
       context: ./frontend
       dockerfile: Dockerfile
